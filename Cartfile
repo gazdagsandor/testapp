@@ -1,0 +1,39 @@
+# Adding RxSwift for reactive support and two-way data binding
+#github "ReactiveX/RxSwift" ~> 4.0
+
+# Adding RxDataSources for reactive UI lists and grids
+#github "RxSwiftCommunity/RxDataSources" ~> 3.0
+
+# Adding Swinject for dependency injection
+github "Swinject/Swinject"
+
+# Crypto and RSA related functions and helpers for Swift
+#github "krzyzanowskim/CryptoSwift"
+#github "TakeScoop/SwiftyRSA"
+
+# SwiftyBeaver for advanced logging
+#github "SwiftyBeaver/SwiftyBeaver"
+
+# Cuckoo mocking framework
+#github "SwiftKit/Cuckoo"
+
+# Alamofire API Client
+#github "Alamofire/Alamofire"
+
+# Alamofire Rx component
+#github "RxSwiftCommunity/RxAlamofire"
+
+# Rx enhanced media picker library
+#github "RxSwiftCommunity/RxMediaPicker"
+
+# Alamofire image loading kit
+#github "Alamofire/AlamofireImage"
+
+# JWT token decoder
+#github "auth0/JWTDecode.swift" ~> 2.2
+
+# Parallax scrolling
+#github "gskbyte/GSKStretchyHeaderView"
+
+#binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
+#binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json"
