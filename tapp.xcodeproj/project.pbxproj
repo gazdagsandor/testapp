@@ -14,6 +14,9 @@
 		EF89A5872238261800DBCAC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF89A5852238261800DBCAC6 /* LaunchScreen.storyboard */; };
 		EF89A5922238261800DBCAC6 /* tappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89A5912238261800DBCAC6 /* tappTests.swift */; };
 		EF89A59D2238261800DBCAC6 /* tappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89A59C2238261800DBCAC6 /* tappUITests.swift */; };
+		EF89A5AB2238264D00DBCAC6 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = EF89A5AA2238264D00DBCAC6 /* Cartfile */; };
+		EF96E573223943C000533FA0 /* RacoonLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF96E572223943C000533FA0 /* RacoonLib.framework */; };
+		EF96E574223943C000533FA0 /* RacoonLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF96E572223943C000533FA0 /* RacoonLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EF89A5C62238289000DBCAC6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF96E574223943C000533FA0 /* RacoonLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EF89A5792238261700DBCAC6 /* tapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF89A57C2238261700DBCAC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +64,10 @@
 		EF89A5982238261800DBCAC6 /* tappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF89A59C2238261800DBCAC6 /* tappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tappUITests.swift; sourceTree = "<group>"; };
 		EF89A59E2238261800DBCAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF89A5AA2238264D00DBCAC6 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		EF89A5BB2238286A00DBCAC6 /* tappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tappUITests.swift; sourceTree = "<group>"; };
+		EF89A5BC2238286A00DBCAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF96E572223943C000533FA0 /* RacoonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RacoonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF96E573223943C000533FA0 /* RacoonLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +99,9 @@
 		EF89A5702238261700DBCAC6 = {
 			isa = PBXGroup;
 			children = (
+				EF96E572223943C000533FA0 /* RacoonLib.framework */,
+				EF89A5BA2238286A00DBCAC6 /* tappUITests */,
+				EF89A5AA2238264D00DBCAC6 /* Cartfile */,
 				EF89A57B2238261700DBCAC6 /* tapp */,
 				EF89A5902238261800DBCAC6 /* tappTests */,
 				EF89A59B2238261800DBCAC6 /* tappUITests */,
@@ -125,6 +150,15 @@
 			path = tappUITests;
 			sourceTree = "<group>";
 		};
+		EF89A5BA2238286A00DBCAC6 /* tappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF89A5BB2238286A00DBCAC6 /* tappUITests.swift */,
+				EF89A5BC2238286A00DBCAC6 /* Info.plist */,
+			);
+			path = tappUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +169,7 @@
 				EF89A5752238261700DBCAC6 /* Sources */,
 				EF89A5762238261700DBCAC6 /* Frameworks */,
 				EF89A5772238261700DBCAC6 /* Resources */,
+				EF89A5C62238289000DBCAC6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +266,7 @@
 			files = (
 				EF89A5872238261800DBCAC6 /* LaunchScreen.storyboard in Resources */,
 				EF89A5842238261800DBCAC6 /* Assets.xcassets in Resources */,
+				EF89A5AB2238264D00DBCAC6 /* Cartfile in Resources */,
 				EF89A5822238261700DBCAC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,8 +467,13 @@
 		EF89A5A22238261800DBCAC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,8 +489,13 @@
 		EF89A5A32238261800DBCAC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,6 +514,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +538,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,6 +561,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,6 +584,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
